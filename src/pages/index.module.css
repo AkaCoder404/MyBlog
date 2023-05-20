@@ -94,3 +94,75 @@
   border-width: var(--ifm-button-border-width);
   border-radius: var(--ifm-button-border-radius);
 }
+
+
+/* SoftwareDevBanner  */
+.softwareDevBanner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  background-color: var(--ifm-color-primary);
+}
+
+.softwareDevBanner .leftContent {
+  padding-left: 8%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.softwareDevBanner .rightContent {
+  width: 50%;
+  height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 850px) {
+  .softwareDevBanner {
+    height: 100%;
+  }
+
+  .softwareDevBanner .leftContent,
+  .softwareDevBanner .rightContent {
+    width: 100%;
+  }
+}
+
+
+/* About me banner */
+.aboutMeBanner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+.aboutMeBanner .leftContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.aboutMeBanner .rightContent {
+  /* background-color: blue; */
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 50%;
+  height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 850px) {
+  .aboutMeBanner {
+    height: 100%;
+  }
+
+  .aboutMeBanner .leftContent,
+  .aboutMeBanner .rightContent {
+    width: 100%;
+  }
+}

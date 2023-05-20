@@ -12,6 +12,9 @@ import Translate, { translate } from '@docusaurus/Translate'
 
 // Custom
 import { Globe } from '@site/src/components/Globe';
+import { SplineKeyboard } from '../components/SplineKeyboard';
+
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -47,9 +50,11 @@ export default function Home() {
         <HomepageFeatures />
 
         {/* TODO: add interactive spline keyboard */}
+        <SoftwareDevBanner />
+
 
         {/* TODO: shift globe to left and add some text about my self */}
-        <Globe />
+        <AboutmeBanner />
       </main>
     </Layout>
   );
@@ -91,6 +96,37 @@ function IntroductionBanner() {
           Checkout my github!
         </a>
 
+      </div>
+    </div>
+  );
+}
+
+
+function SoftwareDevBanner() {
+  return (
+    <div className={styles.softwareDevBanner}>
+      <div className={styles.leftContent}>
+        <h1> <Translate>{'I am a software engineer.'}</Translate> </h1>
+        <p> Hint: Try typing 1234 ...</p>
+        <p> Some things about me ... </p>
+      </div>
+      <div className={styles.rightContent}>
+        <SplineKeyboard />
+      </div>
+    </div>
+  );
+}
+
+function AboutmeBanner() {
+  return (
+    <div className={styles.aboutMeBanner}>
+      <div className={styles.leftContent}>
+        <Globe />
+      </div>
+      <div className={styles.rightContent}>
+        <h1> <Translate>{'I studied at ...'}</Translate> </h1>
+        <p> This globe shows where I've worked </p>
+        <p> Perhaps I should add where http requests are coming from? </p>
       </div>
     </div>
   );
