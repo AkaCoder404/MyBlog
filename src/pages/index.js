@@ -7,8 +7,14 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 
+// Docusaurus
+import Translate, { translate } from '@docusaurus/Translate'
+
+// Custom
+import { Globe } from '@site/src/components/Globe';
+
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -27,15 +33,65 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`AkaCoder404`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      <HomeBanner />
+      {/* <HomepageHeader /> */}
+
       <main>
+        {/* <IntroductionBanner /> */}
+        <IntroductionBanner />
         <HomepageFeatures />
+
+        {/* TODO: add interactive spline keyboard */}
+
+        {/* TODO: shift globe to left and add some text about my self */}
+        <Globe />
       </main>
     </Layout>
+  );
+}
+
+function HomeBanner() {
+  return (
+    <div className={styles.homeBanner}>
+      🚧 This website is a work in progress 🚧
+    </div>
+  );
+}
+
+// 
+function IntroductionBanner() {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <div className={styles.introductionBanner}>
+      <div className="logo">
+        {/* <img src={useBaseUrl('img/relay-white.svg')} /> */}
+      </div>
+
+      <h1> <Translate>{'Hi, my name is'}</Translate> </h1>
+      <h2> George Li </h2>
+      <h3> <Translate>{'I am a software engineer.'}</Translate> </h3>
+      <p>
+        I’m a software engineer specializing in building (and occasionally designing) exceptional
+        software experiences. Currently, I am a undergraduate student
+        at{' '}
+        <a href="https://www.tsinghua.edu.cn/" target="_blank" rel="noreferrer">
+          Tsinghua University
+        </a> studying computer science and technology.
+      </p>
+      <div className={styles.introButton}>
+        <a
+          className="button"
+          href="https://www.github.com/AkaCoder404"
+          target="_blank">
+          Checkout my github!
+        </a>
+
+      </div>
+    </div>
   );
 }

@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// import i18n from './config/i18n.config.js';
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -28,8 +30,19 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
+    // path: 'i18n',
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        // path: 'en',
+        htmlLang: 'en-US',
+      },
+      zh: {
+        // path: 'zh',
+        htmlLang: 'zh-CN',
+      },
+    },
   },
 
   presets: [
@@ -42,14 +55,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/akacoder404/MyBlog',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/akacoder404/MyBlog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -94,9 +107,23 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/showcase', label: 'Showcase', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/akacoder404/MyBlog  MY',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: 'https://github.com/facebook/docusaurus/issues/3526',
+                label: 'Help Me Translate!',
+              },
+            ],
           },
         ],
       },
@@ -106,40 +133,33 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Tutorial', to: '/docs/intro' },
             ],
           },
           {
-            title: 'Community',
+            title: 'Platforms',
             items: [
-              {
-                label: 'Dev.to',
-                href: 'https://dev.to/akacoder404',
-              },
-              {
-                label: 'Medium',
-                href: 'https://medium.com/@thegeorgeyli'
-              }
+              { label: 'Dev.to', href: 'https://dev.to/akacoder404', },
+              { label: 'Medium', href: 'https://medium.com/@thegeorgeyli' },
+            ],
+          },
+          {
+            title: 'Social Media',
+            items: [
+              { label: 'Little Red Book', href: 'https://medium.com/' },
+              { label: 'Twitter', href: 'https://dev.to/', },
+              { label: 'Instagram', href: 'https://medium.com/' },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/akacoder404/',
-              },
+              { label: 'Blog', to: '/blog', },
+              { label: 'GitHub', href: 'https://github.com/akacoder404/', },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AkaCoder404's Blog, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AkaCoder404's Blog - Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
