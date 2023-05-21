@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>My Blog Blog</title>
+        <link>https://akacoder404.github.io/MyBlog/zh/blog</link>
+        <description>My Blog Blog</description>
+        <lastBuildDate>Sat, 14 May 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh</language>
+        <item>
+            <title><![CDATA[Creating My New Blog]]></title>
+            <link>https://akacoder404.github.io/MyBlog/zh/blog/2023/05/20/welcome</link>
+            <guid>https://akacoder404.github.io/MyBlog/zh/blog/2023/05/20/welcome</guid>
+            <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[My previous blog can be found here which used the chirpy template. However, I found it relatively hard to customize, using jekly and graphql. Then while learning about prompt engineering here, the UI of the website really caught my attention. That is when I found Docusaurus. I liked the simplicity of the base design, but the flexible customization as it is built on Reactjs, something I am familiar with.]]></description>
+            <content:encoded><![CDATA[<p>My previous blog can be found <a href="https://akacoder404.github.io" target="_blank" rel="noopener noreferrer">here</a> which used the <a href="https://github.com/cotes2020/chirpy-starter" target="_blank" rel="noopener noreferrer">chirpy</a> template. However, I found it relatively hard to customize, using jekly and graphql. Then while learning about prompt engineering <a href="https://www.google.com.hk/search?client=safari&amp;rls=en&amp;q=learnprompt&amp;ie=UTF-8&amp;oe=UTF-8#bsht=Cgdic2h3Y2hwEgQIBDAB&amp;ip=1" target="_blank" rel="noopener noreferrer">here</a>, the UI of the website really caught my attention. That is when I found <a href="https://docusaurus.io" target="_blank" rel="noopener noreferrer">Docusaurus</a>. I liked the simplicity of the base design, but the flexible customization as it is built on Reactjs, something I am familiar with.</p><p>So this is my first post. Welcome to my website! I hope to maintain a blog, a list of projects that I have completed, and tutorials about topics I am interested in.</p>]]></content:encoded>
+            <category>update</category>
+        </item>
+    </channel>
+</rss>

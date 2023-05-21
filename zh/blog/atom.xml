@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://akacoder404.github.io/MyBlog/zh/blog</id>
+    <title>My Blog Blog</title>
+    <updated>2022-05-14T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://akacoder404.github.io/MyBlog/zh/blog"/>
+    <subtitle>My Blog Blog</subtitle>
+    <icon>https://akacoder404.github.io/MyBlog/zh/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Creating My New Blog]]></title>
+        <id>https://akacoder404.github.io/MyBlog/zh/blog/2023/05/20/welcome</id>
+        <link href="https://akacoder404.github.io/MyBlog/zh/blog/2023/05/20/welcome"/>
+        <updated>2022-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My previous blog can be found here which used the chirpy template. However, I found it relatively hard to customize, using jekly and graphql. Then while learning about prompt engineering here, the UI of the website really caught my attention. That is when I found Docusaurus. I liked the simplicity of the base design, but the flexible customization as it is built on Reactjs, something I am familiar with.]]></summary>
+        <content type="html"><![CDATA[<p>My previous blog can be found <a href="https://akacoder404.github.io" target="_blank" rel="noopener noreferrer">here</a> which used the <a href="https://github.com/cotes2020/chirpy-starter" target="_blank" rel="noopener noreferrer">chirpy</a> template. However, I found it relatively hard to customize, using jekly and graphql. Then while learning about prompt engineering <a href="https://www.google.com.hk/search?client=safari&amp;rls=en&amp;q=learnprompt&amp;ie=UTF-8&amp;oe=UTF-8#bsht=Cgdic2h3Y2hwEgQIBDAB&amp;ip=1" target="_blank" rel="noopener noreferrer">here</a>, the UI of the website really caught my attention. That is when I found <a href="https://docusaurus.io" target="_blank" rel="noopener noreferrer">Docusaurus</a>. I liked the simplicity of the base design, but the flexible customization as it is built on Reactjs, something I am familiar with.</p><p>So this is my first post. Welcome to my website! I hope to maintain a blog, a list of projects that I have completed, and tutorials about topics I am interested in.</p>]]></content>
+        <author>
+            <name>George Li</name>
+            <uri>https://akacoder404.github.io/MyBlog/</uri>
+        </author>
+        <category label="update" term="update"/>
+    </entry>
+</feed>
